@@ -52,5 +52,5 @@ Route::middleware(['auth:admin'])->group(function () {
 
 });
 
-// Home Route
+// Home Routes
 Route::get('/', [StudentAuthController::class, 'showLoginForm']);

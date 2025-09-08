@@ -94,6 +94,7 @@
                             </span>
                         @enderror
                     </div>
+                    <!-- reseource -->
                     <div class="col-md-6">
                         <label class="form-label fw-bold">Time <span class="text-danger">*</span></label>
                         <input type="time" name="time" class="form-control"

@@ -16,6 +16,7 @@ class AdminClassController extends Controller
         return view('admin.class.index', compact('classes'));
     }
 
+    // Store a newly created resource in storage.
     public function store(Request $request): RedirectResponse
     {
         $data = $request->validate([
