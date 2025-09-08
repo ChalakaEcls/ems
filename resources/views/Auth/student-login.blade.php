@@ -63,6 +63,9 @@
                                             Forgot Your Password?
                                         </a>
                                     @endif
+                                    <a class="btn btn-success" href="{{ route('student.register') }}">
+                                    Register
+                                    </a>
                                 </div>
                             </div>
                         </form>

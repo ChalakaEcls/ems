@@ -52,10 +52,5 @@ Route::middleware(['auth:admin'])->group(function () {
 
 });
 
-// API Routes
-Route::get('/api/students', [APIController::class, 'studentsWithSubscriptions']);
-
 // Home Route
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [StudentAuthController::class, 'showLoginForm']);

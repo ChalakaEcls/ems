@@ -65,7 +65,6 @@
                 <th width="10%">Grade</th>
                 <th width="10%">Subject</th>
                 <th width="10%">Start Date</th>
-                <th width="10%">End Date</th>
                 <th width="10%">Time</th>
                 <th width="15%">Update At</th>
                 <th width="30%">Action</th>
@@ -79,7 +78,6 @@
                     <td>{{ $class->grade }}</td>
                     <td>{{ $class->subject }}</td>
                     <td>{{ $class->start_date }}</td>
-                    <td>{{ $class->end_date }}</td>
                     <td>{{ $class->time }}</td>
                     <td>{{ $class->updated_at }}</td>
 
@@ -101,19 +99,6 @@
                 </tr>
             @endforeach
             </tbody>
-            <tfoot class="table-light">
-            <tr>
-                <th>ID</th>
-                <th>Teacher</th>
-                <th>Grade</th>
-                <th>Subject</th>
-                <th>Start Date</th>
-                <th>End Date</th>
-                <th>Time</th>
-                <th>Update At</th>
-                <th>Action</th>
-            </tr>
-            </tfoot>
         </table>
     </div>
 

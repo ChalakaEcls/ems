@@ -95,16 +95,6 @@
                         @enderror
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label fw-bold">End Date <span class="text-danger">*</span></label>
-                        <input type="date" name="end_date" class="form-control"
-                               value="{{ old('end_date',$class->end_date ?? '') }}" required>
-                        @error('end_date')
-                        <span class="invalid-feedback" role="alert">
-                                  <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-                    </div>
-                    <div class="col-md-6">
                         <label class="form-label fw-bold">Time <span class="text-danger">*</span></label>
                         <input type="time" name="time" class="form-control"
                                value="{{ old('time',$class->time ?? '') }}" required>

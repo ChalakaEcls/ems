@@ -65,7 +65,7 @@
                         <p class="card-text display-4">{{ $classes->count() }}</p>
                     </div>
                     <div class="card-footer">
-                        <a href="{{ route('admin.classes.index') }}" class="text-white">View Details</a>
+                        
                     </div>
                 </div>
             </div>
@@ -75,6 +75,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Total Subscriptions</h5>
                         <p class="card-text display-4">{{ $subscriptions ?? '-' }}</p>
+                    </div>
+                     <div class="card-footer">
+                        
                     </div>
                 </div>
             </div>
@@ -137,7 +140,9 @@
                                             <tr>
                                                 <td>{{ $class->subject }}</td>
                                                 <td>{{ $class->grade }}</td>
-                                                <td>{{ $class->students_count }}</td>
+                                                <!-- <td>{{ $class->students_count }}</td> -->
+                                                 <td>{{ $class->subscriptions->count() }}</td>
+
                                             </tr>
                                         @endforeach
                                     </tbody>

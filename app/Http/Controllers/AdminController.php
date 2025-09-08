@@ -77,9 +77,10 @@ class AdminController extends Controller
     public function dashboard()
     {
         $students = Student::withCount('subscriptions')->get();
-        $classes = ClassModel::withCount('subscriptions')->get();
+        $classes = ClassModel::with('subscriptions')->take(5)->get();
         $subscriptions = Subscription::count();
 
+        // dd($classes);
         return view('admin.dashboard', compact('students', 'classes', 'subscriptions'));
     }
 

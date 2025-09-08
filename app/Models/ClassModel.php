@@ -18,7 +18,6 @@ class ClassModel extends Model
         'teacher',
         'start_date',
         'time',
-        'end_date',
     ];
 
     public function subscriptions()
@@ -28,6 +27,6 @@ class ClassModel extends Model
 
     public function students()
     {
-        return $this->belongsToMany(Student::class, 'subscriptions');
+        return $this->hasMany(Student::class, 'student_id');
     }
 }

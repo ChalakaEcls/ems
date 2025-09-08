@@ -93,15 +93,6 @@
                 </tr>
             @endforeach
             </tbody>
-            <tfoot class="table-light">
-            <tr>
-                <th>ID</th>
-                <th>Student Name</th>
-                <th>Subject Name</th>
-                <th>Update At</th>
-                <th>Action</th>
-            </tr>
-            </tfoot>
         </table>
     </div>
 
